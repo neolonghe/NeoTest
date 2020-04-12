@@ -6,7 +6,7 @@ import java.util.Map;
 public class ArrayTest {
 
 	public static void main(String[] args) {
-		Map map = new HashMap();
+		Map<String, String> map = new HashMap<String, String>();
 		map.put("key1", "val1");
 		System.out.println(map);
 		printMap(map);
@@ -14,7 +14,7 @@ public class ArrayTest {
 		return;
 	}
 
-	public static void printMap(Map map) {
+	public static void printMap(Map<String, String> map) {
 		map.put("key2", "var2");
 		System.out.println(map);
 		return ;
