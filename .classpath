@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="src_design_patterns"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/kettle"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jdbcDrivers"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
