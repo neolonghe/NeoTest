@@ -8,9 +8,10 @@ import org.pentaho.di.trans.TransMeta;
 
 public class CvtTxt2ExlPlus {
 	public static final String HOME_PATH = "C:\\Users\\83960\\Desktop\\2007\\";
-	public static final String KTR_PATH = HOME_PATH + "2007Plus.ktr";
+	public static final String KTR_PATH = "F:\\Eclipse\\NeoTest\\NeoTest\\ktr\\2007Plus.ktr";
 	public static final String EXCLE_PATH = HOME_PATH + "Excles\\" + "2017Plus";
 	public static void main(String[] args) {
+		System.out.println("执行转换[" + KTR_PATH + "]。");
 		for (int i = 1; i < 32; i++) {
 			String fileName = "2017_" + i;
 			String txtPath = HOME_PATH + "Files\\" + fileName + ".txt";
@@ -25,9 +26,9 @@ public class CvtTxt2ExlPlus {
 	public static void cvt(String txtPath, String sheetName) {
 		Trans trans = null;
 		try {
-			KettleEnvironment.init(false);
+			KettleEnvironment.init();
 			// 初始化
-//			EnvUtil.environmentInit();
+			EnvUtil.environmentInit();
 			TransMeta transMeta = new TransMeta(KTR_PATH);
 			// 转换
 			trans = new Trans(transMeta);
