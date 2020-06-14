@@ -17,7 +17,10 @@ public class CvtTxt2Exl {
 
 	}
 	
-	
+	/**
+	 * 调起Ktr去执行转换
+	 * @param ktrPath
+	 */
 	public static void cvt(String ktrPath) {
 		Trans trans = null;
 		try {
